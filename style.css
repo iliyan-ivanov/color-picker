@@ -1,0 +1,44 @@
+body {
+    background: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials.jpg) no-repeat center center/cover;
+}
+
+.color-picker-container {
+    padding-top: 70px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+.color-picker-container h1 {
+    font-size: 46px;
+}
+
+.color-display {
+    background: black;
+    min-width: 300px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    border: 5px solid rgb(68, 65, 59);
+    border-radius: 22px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 5px rgb(116, 102, 102);;
+}
+
+.color-display-heading {
+    color: white;
+    margin: auto;
+    font-size: 32px;
+    width: 300px;
+}
+
+.lebel {
+    font-size: 30px;
+}
+
+.color-value {
+    font-size: 28px;
+}

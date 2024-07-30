@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Color picker</title>
+  </head>
+  <body>
+    <div class="color-picker-container">
+      <h1>Color Picker</h1>
+      <div class="color-display">
+        <p class="color-display-heading">
+            Selected color: #000000
+        </p>
+      </div>
+      <lebel class="lebel">Select a color:</lebel>
+      <input type="color" class="picker" onchange="pickColor()" />
+      <p class="color-value">#000000</p>
+    </div>
+    <script>
+      let picker = document.querySelector(".picker");
+      let container = document.querySelector( ".color-display");
+      let heading = document.querySelector(".color-display-heading");
+      let colorValue = document.querySelector( ".color-value");
+
+      function pickColor() {
+        container.style.background = picker.value;
+        heading.innerHTML = `Selected color: ${picker.value}`;
+        colorValue.innerHTML = picker.value;
+      }
+    </script>
+  </body>
+</html>
